@@ -16,3 +16,19 @@ int main() {
     cin >> days;
 
     vector<double> rainfall(days);
+
+    ifstream fin("rainfall.txt");
+    if (!fin) {
+        cerr << "Error: could not open rainfall.txt\n";
+        return 1;
+    }
+
+    for (int i = 0; i < days && fin; i++) {
+        fin >> rainfall[i];
+    }
+    fin.close();
+
+    // Display raw data
+    cout << "Rainfall data (" << days << " days):\n";
+    for (double r : rainfall) cout << r << " ";
+    cout << "\n\n";
