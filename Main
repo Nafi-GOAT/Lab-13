@@ -65,3 +65,9 @@ int main() {
     else
         cout << searchVal << " mm not found\n";
 
+    rainfall.push_back(12.5); // add another value
+    cout << "\nAfter push_back, new size = " << rainfall.size()
+         << " (last element = " << rainfall.back() << ")\n";
+
+    return 0;
+}
