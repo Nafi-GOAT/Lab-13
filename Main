@@ -37,3 +37,13 @@ int main() {
     cout << "First day: " << rainfall.front() << " mm\n";
     cout << "Last day: " << rainfall.back() << " mm\n";
     cout << "Day 10 rainfall: " << rainfall.at(9) << " mm\n";
+
+    double total = accumulate(rainfall.begin(), rainfall.end(), 0.0);
+    double avg = total / rainfall.size();
+    cout << "Total rainfall: " << total << " mm\n";
+    cout << "Average daily rainfall: " << avg << " mm\n";
+
+   
+    cout << "Lowest rainfall: " << *min_element(rainfall.begin(), rainfall.end()) << " mm\n";
+    cout << "Highest rainfall: " << *max_element(rainfall.begin(), rainfall.end()) << " mm\n";
+
