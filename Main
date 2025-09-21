@@ -32,3 +32,8 @@ int main() {
     cout << "Rainfall data (" << days << " days):\n";
     for (double r : rainfall) cout << r << " ";
     cout << "\n\n";
+
+    cout << "Size: " << rainfall.size() << endl;
+    cout << "First day: " << rainfall.front() << " mm\n";
+    cout << "Last day: " << rainfall.back() << " mm\n";
+    cout << "Day 10 rainfall: " << rainfall.at(9) << " mm\n";
