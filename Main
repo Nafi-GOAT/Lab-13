@@ -47,3 +47,13 @@ int main() {
     cout << "Lowest rainfall: " << *min_element(rainfall.begin(), rainfall.end()) << " mm\n";
     cout << "Highest rainfall: " << *max_element(rainfall.begin(), rainfall.end()) << " mm\n";
 
+    sort(rainfall.begin(), rainfall.end());
+    cout << "\nSorted rainfall values:\n";
+    for (double r : rainfall) cout << r << " ";
+    cout << "\n";
+
+    cout << "\nRainfall in reverse order:\n";
+    for (auto it = rainfall.rbegin(); it != rainfall.rend(); ++it) {
+        cout << *it << " ";
+    }
+    cout << "\n";
