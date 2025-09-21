@@ -57,3 +57,11 @@ int main() {
         cout << *it << " ";
     }
     cout << "\n";
+
+    double searchVal = 5.0;
+    auto it = find(rainfall.begin(), rainfall.end(), searchVal);
+    if (it != rainfall.end())
+        cout << searchVal << " mm found at index " << distance(rainfall.begin(), it) << endl;
+    else
+        cout << searchVal << " mm not found\n";
+
