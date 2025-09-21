@@ -9,3 +9,10 @@
 #include <algorithm>
 #include <numeric>
 using namespace std;
+
+int main() {
+    int days;
+    cout << "Enter number of days of rainfall data: ";
+    cin >> days;
+
+    vector<double> rainfall(days);
